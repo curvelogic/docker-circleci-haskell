@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     xz-utils \
     libz-dev \
     libgmp3-dev \
+    libghc-bzlib-dev \
     unzip
 
 RUN rm -rf /var/lib/apt/lists
