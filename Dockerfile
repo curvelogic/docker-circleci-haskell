@@ -8,7 +8,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     xz-utils \
     libgmp3-dev \
-    libpng12-0 \
     unzip
 
 RUN rm -rf /var/lib/apt/lists
