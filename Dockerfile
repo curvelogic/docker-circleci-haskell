@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     curl \
     xz-utils \
+    libgmp3-dev \
     libpng12-0 \
     unzip
 
