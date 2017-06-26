@@ -20,6 +20,6 @@ RUN curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.
 RUN mv /tmp/shc /usr/bin
 RUN stack setup
 
-
+COPY moo-mysql /usr/bin
 
 ENTRYPOINT /bin/bash
