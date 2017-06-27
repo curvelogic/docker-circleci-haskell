@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libz-dev \
     libgmp3-dev \
     libghc-bzlib-dev \
-    libmysqlclient-dev \
     git \
     unzip
 
@@ -20,7 +19,5 @@ RUN mv /tmp/stack-1.4.0-linux-x86_64/stack /usr/local/bin
 RUN curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-7.8.4.tar.bz2 | tar jx -C /tmp
 RUN mv /tmp/shc /usr/bin
 RUN stack setup
-
-COPY moo-mysql /usr/bin
 
 ENTRYPOINT /bin/bash
