@@ -16,6 +16,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-dev \
     python3-pip
 
+RUN locale-gen C.UTF-8 || true
+ENV LANG=C.UTF-8
+
 RUN pip3 install pipenv
 
 RUN rm -rf /var/lib/apt/lists
