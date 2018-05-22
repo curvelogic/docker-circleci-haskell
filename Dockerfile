@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:17.10
 LABEL maintainer="Greg Hawkins <os@curvelogic.co.uk>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -16,7 +16,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-dev \
     python3-pip
 
-RUN locale-gen C.UTF-8 || true
 ENV LANG=C.UTF-8
 
 RUN pip3 install pipenv
