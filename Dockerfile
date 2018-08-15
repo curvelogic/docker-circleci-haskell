@@ -14,7 +14,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     software-properties-common \
     python3-dev \
-    python3-pip
+    python3-pip \
+    pkg-config \
+    libpcre3 \
+    libpcre3-dev
 
 ENV LANG=C.UTF-8
 
