@@ -25,8 +25,13 @@ RUN pip3 install pipenv
 
 RUN rm -rf /var/lib/apt/lists
 
+<<<<<<< HEAD
 RUN curl -L https://github.com/commercialhaskell/stack/releases/download/v1.9.3/stack-1.9.3-linux-x86_64.tar.gz | tar zx -C /tmp
 RUN mv /tmp/stack-1.9.3-linux-x86_64/stack /usr/local/bin
+=======
+RUN curl -L https://github.com/commercialhaskell/stack/releases/download/v2.1.3/stack-2.1.3-linux-x86_64.tar.gz | tar zx -C /tmp
+RUN mv /tmp/stack-2.1.3-linux-x86_64/stack /usr/local/bin
+>>>>>>> Upgrade to stack 2.1.3.
 RUN stack setup
 
 ENTRYPOINT /bin/bash
