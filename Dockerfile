@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM ubuntu:18.04
 LABEL maintainer="Greg Hawkins <os@curvelogic.co.uk>"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
